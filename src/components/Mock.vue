@@ -45,7 +45,6 @@
     methods: {
       search: _.debounce(
       function () {
-        console.log('find', this.name)
         this.$store.dispatch('find', this.name)
       },
       500
